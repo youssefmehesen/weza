@@ -11,11 +11,11 @@
         <div class="row">
             <div class="col mb-3">
                 <label class="form-label">Name</label>
-                <input type="text" name="name" class="form-control" placeholder="Name" value="{{ $user->title }}" >
+                <input type="text" name="name" class="form-control" placeholder="Name" value="{{ $user->name }}" >
             </div>
             <div class="col mb-3">
                 <label class="form-label">Email</label>
-                <input type="text" name="email" class="form-control" placeholder="Email" value="{{ $user->name }}" >
+                <input type="text" name="email" class="form-control" placeholder="Email" value="{{ $user->email }}" >
             </div>
         </div>
         <div class="row">

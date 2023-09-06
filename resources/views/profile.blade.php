@@ -27,12 +27,12 @@
                 </div>
                 <div class="row mt-2">
                     <div class="col-md-6">
-                        <label class="labels">Phone</label>
-                        <input type="text" name="phone" class="form-control" placeholder="Phone Number" value="{{ auth()->user()->phone }}">
+                        <label class="labels">message</label>
+                        <input type="text" name="message" class="form-control" placeholder="Message" value="{{ auth()->user()->Message}}">
                     </div>
                     <div class="col-md-6">
-                        <label class="labels">Address</label>
-                        <input type="text" name="address" class="form-control" value="{{ auth()->user()->address }}" placeholder="Address">
+                        <label class="labels">Phone</label>
+                        <input type="text" name="phone" class="form-control" value="{{ auth()->user()->phone }}" placeholder="Phone">
                     </div>
                 </div>
                  

@@ -52,6 +52,8 @@
                     <td class="text-center" colspan="5">user not found</td>
                 </tr>
             @endif
+            <br>
+              <div class="row">{{ $user->links() }} </div>
         </tbody>
     </table>
 @endsection

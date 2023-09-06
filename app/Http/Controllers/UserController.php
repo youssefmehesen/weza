@@ -12,7 +12,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        $user = User1::orderBy('created_at', 'DESC')->get();
+        $user = User1::orderBy('created_at', 'ASC')->paginate(5);
         return view('users.index', compact('user'));
     }
 
@@ -72,7 +72,7 @@ class UserController extends Controller
   
         $user->delete();
   
-        return redirect()->route('users')->with('success', 'usre deleted successfully');
+        return redirect()->route('users')->with('success', 'user deleted successfully');
     }
     
 }  
